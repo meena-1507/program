@@ -1,0 +1,16 @@
+import java.io.*;
+import java.util.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        String s = sc.nextLine();
+        if(s.charAt(0) == '-' || s.charAt(0) == '+') {
+            s.substring(1);
+        }
+        int first = s.charAt(0) - '0';
+        int last = s.charAt(s.length() - 1) - '0';
+        System.out.println(first + last);
+    }
+}
